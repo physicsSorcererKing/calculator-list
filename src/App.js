@@ -1,12 +1,11 @@
-import Header from "./view/Header";
+import Monitor from './view/Monitor';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <Header/>
-      gg
+      <Monitor />
     </div>
   );
-}
+};
 
 export default App;
