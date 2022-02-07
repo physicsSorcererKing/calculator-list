@@ -6,7 +6,9 @@ const CalButtons = (props) => {
 
   return (
     <Col xs={extend ? 6 : 3} className={'pt-2'}>
-      <Button className="w-100">{value}</Button>
+      <Button color={'primary'} className="w-100">
+        {value}
+      </Button>
     </Col>
   );
 };
