@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useState } from 'react';
+import { forwardRef, useState } from 'react';
 
 const Input = styled.input`
   position: relative;
@@ -12,12 +12,13 @@ const Input = styled.input`
   padding: 0.75rem 2.75rem 0 0.75rem;
 `;
 
-const Monitor = () => {
+const Monitor = forwardRef((props, ref) => {
   return (
     <div className={'py-2'}>
-      <Input />
+      <Input ref={ref} />
     </div>
   );
-};
+});
 
+Monitor.displayName = 'Monitor';
 export default Monitor;

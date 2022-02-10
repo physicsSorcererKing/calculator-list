@@ -2,11 +2,11 @@ import { Button, Col } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 const CalButtons = (props) => {
-  const { value, extend = false } = props;
+  const { value, extend = false, ...others } = props;
 
   return (
     <Col xs={extend ? 6 : 3} className={'pt-2'}>
-      <Button color={'primary'} className="w-100">
+      <Button color={'primary'} className="w-100" {...others}>
         {value}
       </Button>
     </Col>
